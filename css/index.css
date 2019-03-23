@@ -1,1 +1,402 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 0% 10%;
+}
+nav a {
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: auto 0;
+  text-decoration: none;
+  color: black;
+}
+nav a:first-child {
+  font-family: 'Indie Flower', cursive;
+  font-size: 5.5rem;
+  margin-right: auto;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.container {
+  margin: 2em;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+header img {
+  width: 80%;
+  margin: 0 auto;
+}
+header h1,
+header p {
+  line-height: 1.5;
+}
+header .intro {
+  padding: 0% 10%;
+}
+.home {
+  margin: 0 auto;
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 1rem;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 5%;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #17A2B8;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+@media (max-width: 500px) {
+  body nav a:first-child {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  body nav a {
+    flex-direction: row;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  body header,
+  body h1,
+  body p {
+    flex-direction: row;
+    flex: 1 100%;
+    padding-top: 2%;
+  }
+}
+body header h1,
+body h1 h1,
+body p h1 {
+  text-align: left;
+  font-size: 3rem;
+}
+body header img,
+body h1 img,
+body p img {
+  width: 90%;
+}
+body header .intro,
+body h1 .intro,
+body p .intro {
+  flex: 1 100%;
+  padding: 2% 6%;
+}
+@media (max-width: 500px) {
+  body .home {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+@media (max-width: 500px) {
+  body header {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+@media (max-width: 500px) {
+  body .content-section {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+@media (max-width: 500px) {
+  body .inverse-content {
+    display: flex;
+    flex-direction: column-reverse wrap-reverse;
+  }
+}
+body .inverse-content div:first-child {
+  order: 2;
+}
+@media (max-width: 500px) {
+  body .text-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row-wrap;
+    flex: 1 100%;
+  }
+}
+body .text-content h2 {
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  body .img-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row-wrap;
+    flex: 1 100%;
+  }
+}
+@media (max-width: 500px) {
+  body .content-pick,
+  body .content-destination {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row-wrap;
+    flex: 1 100%;
+    padding: 6%;
+  }
+}
+@media (max-width: 500px) {
+  body .destination {
+    width: 80% !important;
+    margin: auto;
+  }
+}
+body .destination h4 {
+  font-size: 3rem;
+}

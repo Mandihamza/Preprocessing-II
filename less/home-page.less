@@ -1,13 +1,41 @@
+.container {
+  margin: 2em;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+
+  img {
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    h1, p {
+      line-height: 1.5;
+    }
+
+    .intro {
+      padding: 0% 10%;
+
+    }
+  }
+
 .home {
+  margin: 0 auto;
+  border-top: 2px dashed @navigation-border;
+  padding-top: 1rem;
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0% 5%;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -57,5 +85,135 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    .btn {
+      .button-syle(@border: 10px; @font: white;);
+    }
   }
 }// home
+
+//Media queries
+
+body {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+}
+
+nav a:first-child {
+  @media @mobile {
+      width: 100%;
+      text-align: center;
+      font-size: 4rem;
+  }
+}
+
+nav a {
+  @media @mobile {
+      flex-direction: row;
+      font-size: 1.5rem;
+  }
+}
+
+header, h1, p {
+  @media @mobile {
+      flex-direction: row;
+      flex: 1 100%;
+      padding-top: 2%;
+  }
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .intro {
+    flex: 1 100%;
+    padding: 2% 6%;
+  }
+}
+
+.home {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+
+header {
+  @media @mobile {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  flex: 1 100%;
+}
+}
+
+.content-section {
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex: 1 100%;
+  }
+}
+
+.inverse-content {
+  @media @mobile {
+    display: flex;
+    flex-direction: column-reverse wrap-reverse;
+  }
+  div:first-child{
+    order: 2;
+  }
+  }
+
+.text-content {
+  @media @mobile {
+      display: flex;
+      flex-direction: column;
+      flex-flow: row-wrap;
+      flex: 1 100%;
+  }
+
+  h2 {
+    padding-top: 2%;
+  }
+}
+
+.img-content {
+  @media @mobile {
+      display: flex;
+      flex-direction: column;
+      flex-flow: row-wrap;
+      flex: 1 100%;
+  }
+}
+
+.content-pick, .content-destination {
+  @media @mobile {
+      display: flex;
+      flex-direction: column;
+      flex-flow: row-wrap;
+      flex: 1 100%;
+      padding: 6%;
+  }
+}
+
+.destination {
+  @media @mobile {
+    width: 80% !important;
+     margin: auto;
+  }
+
+  h4 {
+    font-size: 3rem;
+  }
+}
+}
